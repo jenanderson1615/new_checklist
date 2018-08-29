@@ -5,11 +5,11 @@ import NavBar from "./Components/NavBar";
 import SelectSoftware from "./Views/Select_View/SelectSoftware";
 import SelectVersion from "./Views/Select_View/SelectVersion";
 import SelectTestingType from "./Views/Select_View/SelectTestingType";
+import blue from '@material-ui/core/colors/blue';
 
 const styles = theme => ({
-  formControl: {
-    margin: theme.spacing.unit,
-    minWidth: 200,
+  showChecklistButton: {
+    backgroundColor: blue[500]
   }
 });
 
@@ -26,7 +26,7 @@ class App extends Component {
         <SelectVersion/>
         <SelectTestingType/>
 
-        <Button>Show Checklist</Button>
+        <Button variant="contained" className={classes.showChecklistButton}>Show Checklist</Button>
         </div>
       </div>
     );

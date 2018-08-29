@@ -13,10 +13,8 @@ const SelectTestingType = ({ classes }) => (
     <FormControl className = {classes.formControl}>
           <InputLabel>Select Testing Type</InputLabel>
           <Select>
-            <MenuItem>MacPractice</MenuItem>
-            <MenuItem>iPad - iEHR</MenuItem>
-            <MenuItem>Web - erx.macpractice.net</MenuItem>
-            <MenuItem>TicketTracker</MenuItem>
+            <MenuItem>Workflow</MenuItem>
+            <MenuItem>Bug</MenuItem>
           </Select>
         </FormControl>
    );
