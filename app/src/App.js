@@ -1,25 +1,36 @@
 import React, { Component } from "react";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import { Button} from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import { withStyles } from '@material-ui/core/styles';
+import NavBar from "./Components/NavBar";
+import SelectSoftware from "./Views/Select_View/SelectSoftware";
+import SelectVersion from "./Views/Select_View/SelectVersion";
+import SelectTestingType from "./Views/Select_View/SelectTestingType";
+
+const styles = theme => ({
+  formControl: {
+    margin: theme.spacing.unit,
+    minWidth: 200,
+  }
+});
 
 class App extends Component {
   render() {
+    const { classes } = this.props;
+
     return (
       <div>
-        <AppBar>
-          <Toolbar>
-            MacPractice
-            <Button>Checklist</Button>
-            <Button>Downloads</Button>
-            <Button>Reports</Button>
-            <Button>Getting Started</Button>
-            <Button>Logout</Button>
-          </Toolbar>
-        </AppBar>
+        <NavBar/>
+
+        <div>
+        <SelectSoftware/>
+        <SelectVersion/>
+        <SelectTestingType/>
+
+        <Button>Show Checklist</Button>
+        </div>
       </div>
     );
   }
 }
 
-export default App;
+export default withStyles(styles)(App);
