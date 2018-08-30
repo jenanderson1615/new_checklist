@@ -7,7 +7,7 @@ const NavBar = () => (
     <AppBar position = "static">
           <Toolbar>
             MacPractice
-            <Button>Checklist</Button>
+            <Button onClick={() => selectView()} >Checklist</Button>
             <Button>Downloads</Button>
             <Button>Reports</Button>
             <Button>Getting Started</Button>
@@ -15,4 +15,8 @@ const NavBar = () => (
           </Toolbar>
         </AppBar>
    );
+
+const selectView  = () => {
+    window.location.href = "/";
+};
 export default NavBar;   
