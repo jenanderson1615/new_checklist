@@ -1,9 +1,13 @@
 import React from "react";
-import ChecklistItemHistoryView from './ChecklistItemHistoryView';
+import ChecklistItemList from './ChecklistItemList';
+import ChecklistInfo from '../../Components/ChecklistInfo';
+import ChecklistItemInfo from './ChecklistItemInfo';
 
 const ChecklistItemsView = () => (
   <div>
-      <ChecklistItemHistoryView/>
+      <ChecklistInfo/>
+      <ChecklistItemInfo/>
+      <ChecklistItemList/>
   </div>
 );
 
