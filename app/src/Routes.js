@@ -1,5 +1,5 @@
 import Select_View from "./Views/Select_View/SelectView";
-import Checklist_View from "./Views/Checklist_View/Checklist_View";
+import Checklist_View from "./Views/Checklist_View/ChecklistView";
 import Checklist_Items_View from "./Views/Checklist_Items_View/Checklist_Items_View";
 
 const Routes = [
