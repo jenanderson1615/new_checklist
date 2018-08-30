@@ -1,22 +1,22 @@
-import Select_View from "./Views/Select_View/SelectView";
-import Checklist_View from "./Views/Checklist_View/ChecklistView";
-import Checklist_Items_View from "./Views/Checklist_Items_View/Checklist_Items_View";
+import SelectView from "./Views/Select_View/SelectView";
+import ChecklistView from "./Views/Checklist_View/ChecklistView";
+import ChecklistItemsView from "./Views/Checklist_Items_View/ChecklistItemsView";
 
 const Routes = [
   {
     path: "/",
     exact: true,
-    component: Select_View
+    component: SelectView
   },
   {
     path: "/checklist",
     exact: true,
-    component: Checklist_View
+    component: ChecklistView
   },
   {
     path: "/checklist_items",
     exact: true,
-    component: Checklist_Items_View
+    component: ChecklistItemsView
   },
 ];
 

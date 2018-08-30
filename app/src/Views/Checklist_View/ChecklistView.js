@@ -2,11 +2,11 @@ import React from "react";
 import ChecklistInfo from '../../Components/ChecklistInfo';
 import ChecklistBox from './ChecklistBox';
 
-const Checklist_View = () => (
+const ChecklistView = () => (
   <div>
     <ChecklistInfo />
     <ChecklistBox />
   </div>
 );
 
-export default Checklist_View;
+export default ChecklistView;

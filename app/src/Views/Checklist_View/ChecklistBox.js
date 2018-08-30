@@ -29,16 +29,20 @@ const fields = () => {
 
     return (
       <GridListTile cols={1}>
-        <ListItem cols={1}>
-          <Checkbox />
-            <ListItemText primary={sectionName} />
-            <ListItemSecondaryAction />
-            {completedItems}/{totalItems} Items
-            <ListItemSecondaryAction />
+        <ListItem>
+          <Checkbox onChange={() => checkboxChanged()} />
+          <ListItemText primary={sectionName} />
+          <ListItemSecondaryAction />
+          {completedItems}/{totalItems} Items
+          <ListItemSecondaryAction />
         </ListItem>
       </GridListTile>
     );
   });
+};
+
+const checkboxChanged = () => {
+    window.location.href = "checklist_items";
 };
 
 export default withStyles(styles)(ChecklistBox);
