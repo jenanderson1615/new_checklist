@@ -1,5 +1,5 @@
 import React from "react";
-import ChecklistItemList from './ChecklistItemList';
+import ChecklistItemHeaders from './ChecklistItemHeaders';
 import ChecklistInfo from '../../Components/ChecklistInfo';
 import ChecklistItemInfo from './ChecklistItemInfo';
 
@@ -7,7 +7,7 @@ const ChecklistItemsView = () => (
   <div>
       <ChecklistInfo/>
       <ChecklistItemInfo/>
-      <ChecklistItemList/>
+      <ChecklistItemHeaders/>
   </div>
 );
 
