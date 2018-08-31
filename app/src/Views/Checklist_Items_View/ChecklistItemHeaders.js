@@ -10,6 +10,8 @@ import {
 } from "@material-ui/core";
 import ChecklistItemSubitems from "./ChecklistItemSubitems";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import CreateTicketForm from "../Ticket_Forms/CreateTicketForm";
+import AppendTicketForm from "../Ticket_Forms/AppendTicketForm";
 
 const ChecklistItemHeaders = () => (
   <div>
@@ -60,7 +62,10 @@ const ChecklistItemHeaders = () => (
             Create new Patient
           </ExpansionPanelSummary>
           <ExpansionPanelDetails>
-            <ChecklistItemSubitems />
+            <AppendTicketForm />
+          </ExpansionPanelDetails>
+          <ExpansionPanelDetails>
+            <CreateTicketForm/>
           </ExpansionPanelDetails>
         </ExpansionPanel>
       </ListItem>
@@ -79,4 +84,5 @@ const ChecklistItemHeaders = () => (
     </List>
   </div>
 );
+
 export default ChecklistItemHeaders;
