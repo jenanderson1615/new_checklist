@@ -11,6 +11,7 @@ const NavBar = () => (
             <Button>Downloads</Button>
             <Button>Reports</Button>
             <Button>Getting Started</Button>
+            <Button onClick={() => editChecklistView()} >Edit Checklists</Button>
             <Button>Logout</Button>
           </Toolbar>
         </AppBar>
@@ -18,5 +19,9 @@ const NavBar = () => (
 
 const selectView  = () => {
     window.location.href = "/";
+};
+
+const editChecklistView = () => {
+  window.location.href = "/edit_checklist";
 };
 export default NavBar;   
